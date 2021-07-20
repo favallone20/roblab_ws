@@ -1,8 +1,0 @@
-prefix=/home/francesco/Projects/roblab_ws/devel/.private/teleop_twist_keyboard_cpp
-
-Name: teleop_twist_keyboard_cpp
-Description: Description of teleop_twist_keyboard_cpp
-Version: 0.0.0
-Cflags: -I/home/francesco/Projects/roblab_ws/src/exercise0_husky/teleop_twist_keyboard_cpp/src
-Libs: -L${prefix}/lib 
-Requires: roscpp geometry_msgs

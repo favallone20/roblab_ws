@@ -1,6 +1,0 @@
-devel_space: /home/francesco/Projects/roblab_ws/devel
-install: false
-install_space: /home/francesco/Projects/roblab_ws/install
-profile: default
-source_space: /home/francesco/Projects/roblab_ws/src
-workspace: /home/francesco/Projects/roblab_ws
