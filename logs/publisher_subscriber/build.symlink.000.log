@@ -1,0 +1,5 @@
+Symlinking /home/francesco/Projects/roblab_ws/devel/lib/publisher_subscriber/publisher_node
+Symlinking /home/francesco/Projects/roblab_ws/devel/lib/publisher_subscriber/subscriber_node
+Symlinking /home/francesco/Projects/roblab_ws/devel/lib/pkgconfig/publisher_subscriber.pc
+Symlinking /home/francesco/Projects/roblab_ws/devel/share/publisher_subscriber/cmake/publisher_subscriberConfig.cmake
+Symlinking /home/francesco/Projects/roblab_ws/devel/share/publisher_subscriber/cmake/publisher_subscriberConfig-version.cmake

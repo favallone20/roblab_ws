@@ -1,0 +1,1 @@
+/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/share/publisher_subscriber/cmake/publisher_subscriberConfig-version.cmake
