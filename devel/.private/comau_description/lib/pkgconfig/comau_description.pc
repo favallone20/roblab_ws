@@ -1,0 +1,8 @@
+prefix=/home/francesco/Projects/roblab_ws/devel/.private/comau_description
+
+Name: comau_description
+Description: Description of comau_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

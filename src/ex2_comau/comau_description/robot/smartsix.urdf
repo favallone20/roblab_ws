@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="smartsix">
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/base_link.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collision/base_link.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint1" type="revolute">
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+    </joint>
+
+    <link name ="link1">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/link1.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collision/link1.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint2" type="revolute">
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.15 0 0.45" rpy="-1.5708 0 0"/>
+        <limit lower="-1.4835" upper="2.7052" effort="12" velocity="2.792"/>
+    </joint>
+
+    <link name ="link2">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/link2.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collision/link2.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+
+    <joint name="joint3" type="revolute">
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0 -0.59 0" rpy="0 0 -1.5708"/> 
+        <limit lower="-1.4835" upper="2.7052" effort="12" velocity="2.792"/>
+    </joint>
+
+    <link name ="link3">
+        <visual>
+            <origin xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/link3.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collision/link3.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint4" type="revolute">
+        <parent link="link3"/>
+        <child link="link4"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.13 0 0" rpy="-1.5708 0 0"/>
+        <limit lower="-1.4835" upper="2.7052" effort="12" velocity="2.792"/>
+    </joint>
+
+    <link name ="link4">
+        <visual>
+            <origin xyz="0.0 0.0 0.64707" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/link4.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.64707" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collision/link4.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint5" type="revolute">
+        <parent link="link4"/>
+        <child link="link5"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0 0 0.64707" rpy="1.5708 0 0"/>
+        <limit lower="-1.4835" upper="2.7052" effort="12" velocity="2.792"/>
+    </joint>
+
+    <link name ="link5">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/link5.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collision/link5.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint6" type="revolute">
+        <parent link="link5"/>
+        <child link="link6"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+        <limit lower="-1.4835" upper="2.7052" effort="12" velocity="2.792"/>
+    </joint>
+
+
+    <link name="link6"> 
+        <visual>
+            <origin xyz="0.0 0.0 0.095" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/visual/link6.dae" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.095" rpy="0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://comau_description/meshes/collsion/link6.stl" /> 
+                 <!-- IMPORTANTE spazio fra link.dae" /> -->
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="flange" type="fixed">
+        <parent link="link6"/>
+        <child link="flange"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0 0 0.095" rpy="0 0 0"/>
+    </joint>
+
+    <link name="flange"/>
+</robot>

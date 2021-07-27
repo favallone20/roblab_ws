@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/francesco/Projects/roblab_ws/devel/.private/fanuc_description/setup.sh
