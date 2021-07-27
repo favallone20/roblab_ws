@@ -1,5 +1,0 @@
-exercise0_husky/husky_simulation
-/home/francesco/Projects/roblab_ws/devel/.private/husky_simulation/cmake.lock /home/francesco/Projects/roblab_ws/devel/./cmake.lock
-/home/francesco/Projects/roblab_ws/devel/.private/husky_simulation/lib/pkgconfig/husky_simulation.pc /home/francesco/Projects/roblab_ws/devel/lib/pkgconfig/husky_simulation.pc
-/home/francesco/Projects/roblab_ws/devel/.private/husky_simulation/share/husky_simulation/cmake/husky_simulationConfig-version.cmake /home/francesco/Projects/roblab_ws/devel/share/husky_simulation/cmake/husky_simulationConfig-version.cmake
-/home/francesco/Projects/roblab_ws/devel/.private/husky_simulation/share/husky_simulation/cmake/husky_simulationConfig.cmake /home/francesco/Projects/roblab_ws/devel/share/husky_simulation/cmake/husky_simulationConfig.cmake

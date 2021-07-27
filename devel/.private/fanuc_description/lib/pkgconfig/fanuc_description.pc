@@ -1,8 +1,0 @@
-prefix=/home/francesco/Projects/roblab_ws/devel/.private/fanuc_description
-
-Name: fanuc_description
-Description: Description of fanuc_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

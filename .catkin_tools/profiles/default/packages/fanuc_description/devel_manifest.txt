@@ -1,5 +1,0 @@
-ex2_fanuc/fanuc_description
-/home/francesco/Projects/roblab_ws/devel/.private/fanuc_description/cmake.lock /home/francesco/Projects/roblab_ws/devel/./cmake.lock
-/home/francesco/Projects/roblab_ws/devel/.private/fanuc_description/lib/pkgconfig/fanuc_description.pc /home/francesco/Projects/roblab_ws/devel/lib/pkgconfig/fanuc_description.pc
-/home/francesco/Projects/roblab_ws/devel/.private/fanuc_description/share/fanuc_description/cmake/fanuc_descriptionConfig.cmake /home/francesco/Projects/roblab_ws/devel/share/fanuc_description/cmake/fanuc_descriptionConfig.cmake
-/home/francesco/Projects/roblab_ws/devel/.private/fanuc_description/share/fanuc_description/cmake/fanuc_descriptionConfig-version.cmake /home/francesco/Projects/roblab_ws/devel/share/fanuc_description/cmake/fanuc_descriptionConfig-version.cmake

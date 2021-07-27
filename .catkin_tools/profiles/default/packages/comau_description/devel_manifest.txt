@@ -1,5 +1,0 @@
-ex2_comau/comau_description
-/home/francesco/Projects/roblab_ws/devel/.private/comau_description/cmake.lock /home/francesco/Projects/roblab_ws/devel/./cmake.lock
-/home/francesco/Projects/roblab_ws/devel/.private/comau_description/lib/pkgconfig/comau_description.pc /home/francesco/Projects/roblab_ws/devel/lib/pkgconfig/comau_description.pc
-/home/francesco/Projects/roblab_ws/devel/.private/comau_description/share/comau_description/cmake/comau_descriptionConfig.cmake /home/francesco/Projects/roblab_ws/devel/share/comau_description/cmake/comau_descriptionConfig.cmake
-/home/francesco/Projects/roblab_ws/devel/.private/comau_description/share/comau_description/cmake/comau_descriptionConfig-version.cmake /home/francesco/Projects/roblab_ws/devel/share/comau_description/cmake/comau_descriptionConfig-version.cmake

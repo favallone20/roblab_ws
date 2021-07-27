@@ -1,7 +1,0 @@
-ex1/publisher_subscriber
-/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/cmake.lock /home/francesco/Projects/roblab_ws/devel/./cmake.lock
-/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/lib/publisher_subscriber/publisher_node /home/francesco/Projects/roblab_ws/devel/lib/publisher_subscriber/publisher_node
-/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/lib/publisher_subscriber/subscriber_node /home/francesco/Projects/roblab_ws/devel/lib/publisher_subscriber/subscriber_node
-/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/lib/pkgconfig/publisher_subscriber.pc /home/francesco/Projects/roblab_ws/devel/lib/pkgconfig/publisher_subscriber.pc
-/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/share/publisher_subscriber/cmake/publisher_subscriberConfig.cmake /home/francesco/Projects/roblab_ws/devel/share/publisher_subscriber/cmake/publisher_subscriberConfig.cmake
-/home/francesco/Projects/roblab_ws/devel/.private/publisher_subscriber/share/publisher_subscriber/cmake/publisher_subscriberConfig-version.cmake /home/francesco/Projects/roblab_ws/devel/share/publisher_subscriber/cmake/publisher_subscriberConfig-version.cmake

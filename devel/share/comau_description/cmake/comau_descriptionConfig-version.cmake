@@ -1,1 +1,0 @@
-/home/francesco/Projects/roblab_ws/devel/.private/comau_description/share/comau_description/cmake/comau_descriptionConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/francesco/Projects/roblab_ws/devel/.private/fanuc_description/lib/pkgconfig/fanuc_description.pc

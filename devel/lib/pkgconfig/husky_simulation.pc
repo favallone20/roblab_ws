@@ -1,1 +1,0 @@
-/home/francesco/Projects/roblab_ws/devel/.private/husky_simulation/lib/pkgconfig/husky_simulation.pc
