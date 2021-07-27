@@ -19,7 +19,7 @@
         <child link="link1"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+        <limit lower="-3.228" upper="3.228" effort="12" velocity="3.141"/>
     </joint>
 
     <link name="link1">
@@ -40,7 +40,7 @@
         <child link="link2"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0.15 0 0.525" rpy="1.5708 0 0"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+        <limit lower="-2.268" upper="2.268" effort="12" velocity="3.14"/>
     </joint>
 
     <link name="link2">
@@ -63,7 +63,7 @@
         <child link="link3"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0 0.79 0" rpy="0 0 1.5708"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+        <limit lower="-3.996" upper="3.996" effort="12" velocity="3.490"/>
     </joint>
 
 
@@ -75,6 +75,7 @@
             </geometry>
         </visual>
         <collision>
+            <origin xyz="-1.315 0.15 0" rpy="-1.5708 0 -1.5708"/>  <!-- 1.315 = 0.525 + 0.790 (vedi robot datasheet)-->
             <geometry>
                 <mesh filename="package://fanuc_description/meshes/collision/link_3.stl" />
             </geometry>
@@ -86,7 +87,7 @@
         <child link="link4"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0.15 0 0" rpy="1.5708 0 0"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+        <limit lower="-3.490" upper="3.490" effort="110" velocity="6.108"/>
     </joint>
 
     <link name="link4">
@@ -97,6 +98,7 @@
             </geometry>
         </visual>
         <collision>
+            <origin xyz="1.465 0.0 -0.15" rpy="0 -1.5708 0.0"/>
             <geometry>
                 <mesh filename="package://fanuc_description/meshes/collision/link_4.stl" />
             </geometry>
@@ -108,7 +110,7 @@
         <child link="link5"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0 0 0.86" rpy="1.5708 0 0"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+        <limit lower="-2.443" upper="2.443" effort="110" velocity="6.108"/>
     </joint>
 
     <link name="link5">
@@ -119,6 +121,7 @@
             </geometry>
         </visual>
         <collision>
+            <origin xyz="-1.465 -1.01 0" rpy="1.5708 0 1.5708"/>  <!-- 0.86 + 0.1 = 1.01;  0.525+0.79+0.15 = 1.465-->
             <geometry>
                 <mesh filename="package://fanuc_description/meshes/collision/link_5.stl" />
             </geometry>
@@ -130,7 +133,7 @@
         <child link="link6"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0 0.1 0" rpy="-1.5708 0 0"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
+        <limit lower="-7.85" upper="7.85" effort="60" velocity="6.981"/>
     </joint>
 
     <link name="link6">
@@ -141,6 +144,7 @@
             </geometry>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 1.5708"/>  <!-- 0.86 + 0.1 = 1.01;  0.525+0.79+0.15 = 1.465-->
             <geometry>
                 <mesh filename="package://fanuc_description/meshes/collision/link_6.stl" />
             </geometry>
@@ -152,7 +156,6 @@
         <child link="flange"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <limit lower="-2.967" upper="2.967" effort="12" velocity="2.443"/>
     </joint>
 
     <link name="flange"/>

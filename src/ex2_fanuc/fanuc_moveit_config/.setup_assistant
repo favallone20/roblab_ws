@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: fanuc_description
+    relative_path: robot/fanuc.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/fanuc.srdf
+  CONFIG:
+    author_name: Francesco Avallone
+    author_email: f.avallone20@studenti.unisa.it
+    generated_timestamp: 1627391310
