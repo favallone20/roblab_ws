@@ -1,0 +1,5 @@
+# A robot state consisting of joint names and joint positions to be used for forward kinematics
+moveit_msgs/RobotState robot_state
+---
+# The resultant vector of PoseStamped messages that contains the (stamped) poses of the requested links
+geometry_msgs/Pose end_effector
