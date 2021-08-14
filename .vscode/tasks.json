@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		// {
+		// 	"label": "test_demo_read_gazebo_sensor",
+		// 	"type": "shell",
+		// 	"command": "roslaunch force_torque_sensor demo_read_schunk_mini_45_si_290_10.launch debugger_attached:=true",
+		// 	"isBackground": true,
+		// 	"problemMatcher": [
+		// 		{
+		// 			"pattern": [
+		// 				{
+		// 					"regexp": ".",
+		// 					"file": 1,
+		// 					"location": 2,
+		// 					"message": 3
+		// 				}
+		// 			],
+		// 			"background":
+		// 			{
+		// 				"activeOnStart": true,
+		// 				"beginsPattern": ".",
+		// 				"endsPattern": ".",
+		// 			}
+		// 		}
+		// 	]
+		// }
+	]
+}

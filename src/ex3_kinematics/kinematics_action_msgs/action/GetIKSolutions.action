@@ -1,0 +1,13 @@
+# Goal
+#Initial Robot_State
+moveit_msgs/RobotState robot_state
+# Pose of the end effector
+geometry_msgs/Pose pose_end_effector_goal
+---
+#Result
+#Inverse kinematics solutions
+moveit_msgs/RobotState[] ik_solutions
+---
+#Feedback
+#Inverse kinematics solution feedback
+moveit_msgs/RobotState ik_solution

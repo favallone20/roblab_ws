@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/smartsix.srdf
   CONFIG:
-    author_name: Francesco Avallone
-    author_email: f.avallone20@studenti.unisa.it
-    generated_timestamp: 1627382329
+    author_name: Enrico Ferrentino
+    author_email: eferrentino@unisa.it
+    generated_timestamp: 1601309536

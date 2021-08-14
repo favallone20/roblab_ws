@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 
-<!-- 
-    This URDF uses the Denavit-Hartenberg (DH) conventions to place the reference frames of the joints.
-    It uses offsets to correctly place the visual and collision meshes. The Comau SmartSix meshes are
-    generated such that their reference frames' origins are always placed in a center of rotation.
-    This allows to offset the visual and collision meshes by using only the displacements in the
-    mechanical drawing, without the need for manual (and error-prone) adjustements.
--->
+<!-- The auto-generated URDF has been modified to be compatible with the last versions of MoveIt! and Gazebo -->
 
 <robot  name="smartsix"  xmlns:xacro="http://www.ros.org/wiki/xacro">         
     
@@ -155,7 +152,7 @@
     </link>
 
     <joint name="joint3" type="revolute">
-        <!--Joint properties-->
+         <!--Joint properties-->
         <origin xyz="0 -0.59 0" rpy="0 0 -1.5708" />
         <parent link="link2" />
         <child link="link3" />
@@ -167,7 +164,7 @@
 
      <!--************************************************LINK 4********************************************-->
     <link name="link4">
-        <!--Link properties-->
+         <!--Link properties-->
         <inertial>
             <origin xyz="-2.2301E-05 0.0024419 -0.28366" rpy="0 0 0" />
             <mass value="50.29" />
@@ -177,7 +174,7 @@
         </inertial>
 
         <visual>
-            <origin xyz="0 0 0.64707" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
                 <mesh filename="package://comau_description/meshes/visual/link4.dae" />
             </geometry>
@@ -185,7 +182,7 @@
         </visual>
 
         <collision>
-            <origin xyz="0 0 0.64707" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
                 <mesh filename="package://comau_description/meshes/collision/link4.stl" />
             </geometry>
@@ -194,8 +191,8 @@
     </link>
 
     <joint name="joint4" type="revolute">
-        <!--Joint properties-->
-        <origin xyz="0.13 0 0" rpy="-1.5708 0 0" />
+          <!--Joint properties-->
+        <origin xyz="0.13 0.64707 0" rpy="-1.5708 0 0" />
         <parent link="link3" />
         <child link="link4" />
         <axis xyz="0 0 1" />
@@ -206,7 +203,7 @@
 
     <!--************************************************LINK 5********************************************-->
     <link name="link5">
-        <!--Link properties-->
+         <!--Link properties-->
         <inertial>
             <origin xyz="-7.297E-05 0.020653 0.00074202" rpy="0 0 0" />
             <mass value="3.6523" />
@@ -234,7 +231,7 @@
     
     <joint name="joint5" type="revolute">
         <!--Joint properties-->
-        <origin xyz="0 0 0.64707" rpy="1.5708 0 0" />
+        <origin xyz="0 0 0" rpy="1.5708 0 0" />
         <parent link="link4" />
         <child link="link5" />
         <axis xyz="0 0 1" />
@@ -243,9 +240,9 @@
     </joint>
 
 
-    <!--************************************************LINK 6********************************************-->
+     <!--************************************************LINK 6********************************************-->
     <link name="link6">
-        <!--Link properties-->
+         <!--Link properties-->
         <inertial>
             <origin xyz="-0.00066992 3.0689E-05 -0.0074649" rpy="0 0 0" />
             <mass value="0.26849" />
@@ -255,7 +252,7 @@
         </inertial>
 
         <visual>
-            <origin xyz="0 0 0.095" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
                 <mesh filename="package://comau_description/meshes/visual/link6.dae" />
             </geometry>
@@ -263,7 +260,7 @@
         </visual>
 
         <collision>
-            <origin xyz="0 0 0.095" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
                 <mesh filename="package://comau_description/meshes/collision/link6.stl" />
             </geometry>
@@ -272,23 +269,13 @@
     </link>
 
     <joint name="joint6" type="revolute">
-        <!--Joint properties-->
-        <origin xyz="0 0 0" rpy="-1.5708 0 0" />
+         <!--Joint properties-->
+        <origin xyz="0 0.095 0" rpy="-1.5708 0 0" />
         <parent link="link5" />
         <child link="link6" />
         <axis xyz="0 0 1" />
         <limit lower="-47.1238" upper="47.1238" effort="5.8" velocity="9.6" />
         <dynamics damping="10.0" friction="50.0" />
-    </joint>
-
-    <!--************************************************FLANGE********************************************-->
-    <link name="flange"/>
-
-    <joint name="flange" type="fixed">
-        <!--Joint properties-->
-        <origin xyz="0 0 0.095" rpy="0 0 0" />
-        <parent link="link6" />
-        <child link="flange" />
     </joint>
 
 </robot>

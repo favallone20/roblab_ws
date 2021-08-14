@@ -6,6 +6,7 @@
         "limitSymbolsToIncludedHeaders": true
       },
       "includePath": [
+        "/home/francesco/Projects/roblab_ws/devel/include/**",
         "/opt/ros/melodic/include/**",
         "/usr/include/**"
       ],

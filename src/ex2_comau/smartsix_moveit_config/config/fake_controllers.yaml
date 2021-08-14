@@ -1,6 +1,5 @@
 controller_list:
   - name: fake_smartsix_controller
-    type: $(arg execution_type)
     joints:
       - joint1
       - joint2

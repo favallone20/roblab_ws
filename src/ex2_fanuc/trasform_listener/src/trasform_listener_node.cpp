@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
     while(ros::ok()){
         try{
-            for(int i= 0; i< num_link-1; i++){
+            for(int i= num_link-1; i >= 0; i--){
                 printTrasformedStamped(tf_buffer, link_name[i], link_name[7]);
             }  
         }

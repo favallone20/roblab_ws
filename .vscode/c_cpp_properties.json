@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/francesco/Projects/roblab_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/devel/.private/kinematics_action_msgs/include",
+                "/opt/ros/melodic/include/eigen_conversions"
+            ],
+            "name": "ROS"
+        }
+    ],
+    "version": 4
+}
