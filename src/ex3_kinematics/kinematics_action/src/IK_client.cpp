@@ -14,6 +14,7 @@ typedef actionlib::SimpleActionClient<kinematics_action_msgs::GetIKSolutionsActi
 
 void printNewPoses(robot_state::RobotState robot_state)
 {
+  ROS_INFO_STREAM("---------------------------------- New Poses ----------------------------------");
   std::vector<std::string> links;
   links.push_back("base_link");
   links.push_back("link1");
@@ -30,14 +31,18 @@ void printNewPoses(robot_state::RobotState robot_state)
     geometry_msgs::Pose pose = tf2::toMsg(end_effector_state);
     ROS_INFO_STREAM(links[i] << ": " << pose);
   }
+
+  ROS_INFO_STREAM("-----------------------------------------------------------------------------");
 }
 
 void doneIK_CB(const actionlib::SimpleClientGoalState& state, const kinematics_action_msgs::GetIKSolutionsResultConstPtr& result)
 {
+  ROS_INFO_STREAM("-----------------------------------------------------------------------------");
     ROS_INFO_STREAM("Solutions: "<<"\n");
     for(int i=0; i<result->ik_solutions.size();i++){
         ROS_INFO_STREAM(result->ik_solutions[i]<<" \n");
     }
+    ROS_INFO_STREAM("-----------------------------------------------------------------------------");
 }
 
 void activeServer_CB()
@@ -54,13 +59,13 @@ void feedback_CB(const kinematics_action_msgs::GetIKSolutionsFeedbackConstPtr& f
 int main(int argc, char* argv[])
 {
   ros::init(argc, argv, "IK_client");
-  Client aclient("IK_client", true);
+  Client aclient("IKActionServer", true);
   kinematics_action_msgs::GetIKSolutionsGoal goal;
 
   aclient.waitForServer();
 
-  robot_model_loader::RobotModelLoader robot_model_loader("fanuc_description");
-  robot_model::RobotModelConstPtr kinematic_model = robot_model_loader.getModel();
+  robot_model_loader::RobotModelLoader robot_model_loader("robot_description");
+  robot_model::RobotModelPtr kinematic_model = robot_model_loader.getModel();
   robot_state::RobotState robot_state(kinematic_model);
   const robot_state::JointModelGroup* joint_model_group = kinematic_model->getJointModelGroup("fanuc");
 
