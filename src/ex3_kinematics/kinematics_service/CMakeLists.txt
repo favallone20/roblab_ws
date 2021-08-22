@@ -107,7 +107,7 @@ find_package(catkin REQUIRED
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES kinematics_service
-#  CATKIN_DEPENDS other_catkin_pkg
+  CATKIN_DEPENDS kinematics_service_msgs
 #  DEPENDS system_lib
 )
 

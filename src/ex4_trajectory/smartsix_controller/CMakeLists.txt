@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   moveit_ros_planning_interface
   moveit_msgs
   geometry_msgs
+  moveit_dp_redundancy_resolution
+  moveit_dp_redundancy_resolution_msgs
 )
 
 catkin_package(

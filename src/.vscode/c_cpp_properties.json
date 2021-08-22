@@ -8,7 +8,9 @@
             "includePath": [
                 "/opt/ros/melodic/include/**",
                 "/usr/include/**",
-                "/opt/ros/melodic/include/ros"
+                "/opt/ros/melodic/include/ros",
+                "${workspaceFolder}/ex4_trajectory/moveit_dp_redundancy_resolution/moveit_dp_redundancy_resolution/include",
+                "/opt/ros/melodic/include"
             ],
             "name": "ROS"
         }

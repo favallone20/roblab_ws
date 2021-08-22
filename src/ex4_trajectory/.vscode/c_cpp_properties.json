@@ -8,10 +8,9 @@
             "includePath": [
                 "/home/francesco/Projects/roblab_ws/devel/include/**",
                 "/opt/ros/melodic/include/**",
+                "/home/francesco/Projects/roblab_ws/src/ex4_trajectory/moveit_dp_redundancy_resolution/moveit_dp_redundancy_resolution/include/**",
                 "/usr/include/**",
-                "${workspaceFolder}/devel/.private/kinematics_action_msgs/include",
-                "/opt/ros/melodic/include/eigen_conversions",
-                "${workspaceFolder}/src/ex4_trajectory/moveit_dp_redundancy_resolution/moveit_dp_redundancy_resolution/include"
+                "/opt/ros/melodic/include"
             ],
             "name": "ROS"
         }
