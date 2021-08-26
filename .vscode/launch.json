@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/francesco/Projects/roblab_ws/devel/.private/kinematics_action/lib/kinematics_action/IK_server_node",
+            "program": "/home/francesco/Projects/roblab_ws/devel/.private/kinematics_action/lib/kinematics_action/IK_client_node",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
