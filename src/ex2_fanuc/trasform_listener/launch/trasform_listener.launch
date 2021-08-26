@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="trasform_listener" type="trasform_listener" name="trasform_listener" output="screen"/>
+    <include file="$(find fanuc_moveit_config)/launch/demo.launch" />
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui"/>
+</launch>

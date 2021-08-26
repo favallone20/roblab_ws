@@ -1,3 +1,15 @@
+/* -------------------------------------------------------------------
+ *
+ *
+ * Title: trasform_listener.cpp
+ * Author:  Francesco Avallone
+ *
+ * This node computes the orientation and the position of the end-effector,
+ * in all the reference frames of the robot, using /tf topic. 
+ * 
+ * -------------------------------------------------------------------
+ */
+
 #include <ros/ros.h>
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
@@ -44,7 +56,7 @@ int main(int argc, char *argv[])
     tf2_ros::Buffer tf_buffer;
     tf2_ros::TransformListener tf_listener(tf_buffer);
     ros::Rate rate(10);
-    //21
+
     int num_link = 8; 
     std::string link_name[num_link];
     link_name[0] = "base_link"; link_name[1] = "link1"; link_name[2] = "link2";

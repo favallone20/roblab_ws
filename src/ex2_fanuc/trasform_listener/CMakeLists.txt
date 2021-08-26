@@ -10,8 +10,6 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED
     roscpp
     tf2
-    rospy
-    std_msgs
     tf2_ros
     tf2_geometry_msgs
     geometry_msgs
@@ -137,7 +135,7 @@ ${catkin_INCLUDE_DIRS}
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(trasform_listener src/trasform_listener_node.cpp)
+add_executable(trasform_listener src/trasform_listener.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
