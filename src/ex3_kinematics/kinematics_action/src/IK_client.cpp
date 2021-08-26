@@ -5,7 +5,8 @@
  * Author:  Francesco Avallone
  *
  * This module implements an action client to compute all the inverse kinematics solutions
- * for a given end effector pose.
+ * for a given end effector pose. Moreover, moveit_visual_tools class is used to show the
+ * IK solutions on Rviz. 
  *
  * -------------------------------------------------------------------
  */
@@ -28,6 +29,7 @@
 typedef actionlib::SimpleActionClient<kinematics_action_msgs::GetIKSolutionsAction> Client;
 
 std::atomic<bool> exit_thread_flag{ false };
+
 
 void publishJointState(ros::Publisher joint_state_publisher, sensor_msgs::JointState joint_state)
 {
