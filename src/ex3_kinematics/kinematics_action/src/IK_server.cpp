@@ -1,3 +1,15 @@
+/* -------------------------------------------------------------------
+ *
+ *
+ * Title: IK_server.cpp
+ * Author:  Francesco Avallone
+ *
+ * This module implements an action server to compute all the inverse kinematics solutions
+ * for a given end effector pose.
+ *
+ * -------------------------------------------------------------------
+ */
+
 #include <actionlib/server/simple_action_server.h>
 #include <kinematics_action_msgs/GetIKSolutionsAction.h>
 #include <ros/ros.h>
@@ -44,7 +56,7 @@ public:
     return true;
   }
 
-  std::vector<std::vector<double>> getSolutions(const kinematics_action_msgs::GetIKSolutionsGoalConstPtr &goal,
+  void getSolutions(const kinematics_action_msgs::GetIKSolutionsGoalConstPtr &goal,
                                                 robot_state::RobotState robot_state,
                                                  const  moveit::core::JointModelGroup *joint_model_group)
   {
@@ -74,17 +86,15 @@ public:
         result.ik_solutions.push_back(robot_state_msgs);
       }
 
-      if (solutions.size() >= 8)
+      if (result.ik_solutions.size() >= 8)
       {
-        break;
+        cnt = 10000;
       }
 
       cnt++;
       robot_state.setToRandomPositions(joint_model_group);
       robot_state.copyJointGroupPositions(joint_model_group, joint_position);
     }
-
-    return solutions;
   }
 
   void executeCB(const kinematics_action_msgs::GetIKSolutionsGoalConstPtr &goal)
@@ -96,7 +106,7 @@ public:
     robot_state::robotStateMsgToRobotState(goal->robot_state, robot_state);
 
     const  moveit::core::JointModelGroup *joint_model_group = kinematic_model->getJointModelGroup("fanuc");
-    solutions = getSolutions(goal, robot_state, joint_model_group);
+    getSolutions(goal, robot_state, joint_model_group);
 
     ROS_INFO("%s: Succeeded", action_name_.c_str());
     as_.setSucceeded(result);
@@ -108,7 +118,6 @@ int main(int argc, char *argv[])
 {
   ros::init(argc, argv, "IKActionServer");
   IKActionServer ik_action_server("IKActionServer");
-
   ros::spin();
   return 0;
 }

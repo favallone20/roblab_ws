@@ -6,11 +6,12 @@
 
     <include file="$(find fanuc_moveit_config)/launch/demo.launch"></include>
 
-    <arg name="debugger_attached" default="false" />
-    <node name="IKActionServer" type="IK_server_node" pkg="kinematics_action" output="screen" unless="$(arg debugger_attached)" />
+    <arg name="node_start_delay" default="0.0" />
 
-    <node name="IKActionClient" type="IK_client_node" pkg="kinematics_action" output="screen"/>
-    
-    <node name="joint_state_publisher_gui" type="joint_state_publisher_gui" pkg="joint_state_publisher_gui" />
+    <node name="IKActionServer" type="IK_server_node" pkg="kinematics_action" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
+
+    <node name="IKActionClient" type="IK_client_node" pkg="kinematics_action" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
+
+    <!-- <node name="joint_state_publisher_gui" type="joint_state_publisher_gui" pkg="joint_state_publisher_gui" /> -->
 
 </launch>

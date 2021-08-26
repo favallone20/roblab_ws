@@ -10,6 +10,7 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED
     roscpp
     moveit_ros_planning
+    moveit_visual_tools
     tf2_eigen
     kinematics_action_msgs
     actionlib_msgs
