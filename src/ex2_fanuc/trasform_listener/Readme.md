@@ -4,7 +4,7 @@ This package implements an example of trasform listener to compute orientation a
 
 ## Run the Example
 ### Setup 
-An example launch file trasform_listener.launch is provided which launchs three nodes:
+An example launch file trasform_listener.launch is provided which launches three nodes:
 
 roslaunch trasform_listener trasform_listener.launch 
 

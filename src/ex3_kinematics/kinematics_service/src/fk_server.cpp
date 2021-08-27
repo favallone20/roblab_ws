@@ -1,3 +1,14 @@
+/* -------------------------------------------------------------------
+ *
+ *
+ * Title: fk_server.cpp
+ * Author:  Francesco Avallone
+ *
+ * This module implements a service server to compute FK solution.
+ *
+ * -------------------------------------------------------------------
+ */
+
 #include <kinematics_service_msgs/GetFKSolution.h>
 #include <ros/ros.h>
 #include <moveit/robot_state/robot_state.h>

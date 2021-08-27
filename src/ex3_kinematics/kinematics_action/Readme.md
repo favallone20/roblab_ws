@@ -2,7 +2,7 @@
 This package implements an example of computation of inverse kinematics with ros action
 
 ## Setup
-An example launch file IKAction.launch is provided which launchs three nodes:
+An example launch file IKAction.launch is provided which launches three nodes:
 
 roslaunch kinematics_action IKAction.launch
 

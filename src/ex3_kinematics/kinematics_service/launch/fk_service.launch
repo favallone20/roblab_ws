@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find fanuc_moveit_config)/launch/demo.launch" />
+    <arg name="node_start_delay" default="1.0" />
+    <node pkg="kinematics_service" type="fk_server_node" name="fk_server_node" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+    <node pkg="kinematics_service" type="fk_client_node" name="fk_client_node" output="screen"  launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+</launch>
