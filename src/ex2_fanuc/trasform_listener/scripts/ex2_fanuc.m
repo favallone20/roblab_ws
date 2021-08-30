@@ -1,4 +1,4 @@
-% Comau Smart-Six forward kinematics
+% Fanuc forward kinematics
 
 q = zeros(6,1);
 
@@ -31,7 +31,9 @@ aa56 = rotm2axang(R56);
 % Repeat for all other transforms ...
 
 % T06 (full chain FK)
-t06 = tform2trvec(T06);
+T06
 R06 = tform2rotm(T06);
+quaternion = rotm2quat(R06)
+
 RPY06 = rotm2eul(R06);
-aa06 = rotm2axang(R06);
+aa06 = rotm2axang(R06)
