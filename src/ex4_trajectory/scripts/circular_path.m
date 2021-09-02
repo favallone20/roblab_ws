@@ -3,7 +3,7 @@ close all;
 clc;
 
 
-filepath = '~/Documents/MATLAB/Scripts Robotica/lezione20 Robotica/fanuc_circular.traj';
+filepath = '~/Documents/MATLAB/Scripts Robotica/lezione20 Robotica/circular.traj';
  
 %definiamo pochi punti e poi imponiamo all'interpolatore di generare una
 %traiettoria continua che ce li collega. Dato che ROS ha bisogno di una
@@ -13,20 +13,23 @@ filepath = '~/Documents/MATLAB/Scripts Robotica/lezione20 Robotica/fanuc_circula
 
 no_of_cp = 10; %punti inziali (noi dovremmo mettere il numero 
 %minimo di punti che visivamente ci fornisce una circonferenza) 
-no_of_samples = 70;%punti a valle della interpolazione. 
+no_of_samples = 30;%punti a valle della interpolazione. 
 
-rho = 0.5;%raggio costante
+rho = 0.25;%raggio costante
 %definisco un teta per ogni control_point,
 %quindi ho no_of_cp punti con diverse angolazioni di teta e raggio costante
 theta = linspace(0, 2*pi, no_of_cp);
+%altezza della circonferenza rispetto al piano xy
+h = 1.1;
+shift_x_axis = 0.9; 
 
 ctrl_points = NaN * ones(3, no_of_cp);
-ctrl_points(1,:) = 0.5 * ones(1, no_of_cp); % punti rispetto x
+ctrl_points(1,:) = shift_x_axis * ones(1, no_of_cp); % punti rispetto x
 %rispetto a x semplicemente dico a che distanza da 
 % 0 ho questa circonferenza.
 
 ctrl_points(2,:) = rho * cos(theta);  %punti rispetto y
-ctrl_points(3,:) = rho * sin(theta); %punti rispetto a z
+ctrl_points(3,:) = h + rho * sin(theta); %punti rispetto a z
 
 
 %parto da una configurazione polare, 
